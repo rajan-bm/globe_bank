@@ -17,9 +17,8 @@ $pages = [
         <h1>Pages</h1>
 
         <div class="actions">
-            <a class="action" href="">Create New Page</a>
+            <a class="action" href="<?php echo url_for('/staff/pages/new.php'); ?>">Create New Page</a>
         </div>
-
         <table class="list">
             <tr>
                 <th>ID</th>
@@ -30,7 +29,6 @@ $pages = [
                 <th>&nbsp;</th>
                 <th>&nbsp;</th>
             </tr>
-
             <?php foreach ($pages as $page) { ?>
                 <tr>
                     <td><?php echo h($page['id']); ?></td>
