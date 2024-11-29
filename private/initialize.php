@@ -1,5 +1,6 @@
 <?php
-
+    ob_start(); // turn on output buffering
+    
     // all contants go here
     define('PRIVATE_PATH', dirname(__FILE__));
     define('PROJECT_PATH', dirname(PRIVATE_PATH));
